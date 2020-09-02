@@ -1,16 +1,14 @@
 """
 Program: cast_to_integer.py
-Author: Your Name
-Last date modified: MM/DD/YYYY
+Author: Grayson Hardin
+Last date modified: 9/1/2020
 
 
-
-The purpose of this program is to accept any input,
-convert to a integer type and output the integer.
+This program will accept any input and convert to an integer.
 """
 
 def cast_integer(user_input):
-
+    #Stores user's input.
     return int(user_input)
 
 

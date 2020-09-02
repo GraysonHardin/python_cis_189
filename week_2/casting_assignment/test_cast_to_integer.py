@@ -3,6 +3,7 @@ from cast_to_integer import cast_integer
 
 
 class MyTestCase(unittest.TestCase):
+    # Test unit for the integer value.
     def test__cast_integer__given_integer__returns__integer(self):
         user_input = 10
         expected = 10
@@ -12,6 +13,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(expected, actual)
 
     def test__cast_integer__given_float_returns_integer(self):
+        # Test value for the float.
         user_input = 6.5
         expected = 6
 
@@ -22,11 +24,10 @@ class MyTestCase(unittest.TestCase):
     def test__cast_integer__given_string_returns_error(self):
         user_input = 'example'
 
-
         cast_integer(user_input)
         """
         ValueError: invalid literal for int() with base 10: 'example'
-        The function cannot convert a string, "example" into an integer value and thus, the test fails.
+        This is expected. The function cannot convert a string, "example" into an integer value and thus, the test fails.
         """
 
 
